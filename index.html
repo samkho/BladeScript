@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>BladeScript -- Script your Silhouette Cutter Designs</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+
+	<style>
+		.boxsizingBorder {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		textarea {
+			border: 1px solid #999999;
+			width: 100%;
+			height: 100%;
+			margin: 5px 0;
+			padding: 3px;
+			resize: both;
+		}
+
+		#hdc {
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+</head>
+<body>
+    <div id="dst"></div>
+	<table width="100%" height="100%">
+		<tr width="100%" height="100%">
+			<td width="42%" height="100%" valign="top">
+				<textarea width="100%" height="100%" id="src" rows="24"></textarea>
+			</td>
+			<td width="16%" height="100%" valign="top" align="center">
+				<button id="run">Run</button>
+				<p/>
+				<button id="toDxf">Export To DXF</button>
+			</td>
+			<td width="42%" height="100%" bgcolor="#ffff00" valign="top">
+				<div width="100%" height="100%">
+					<canvas id="hdc" width="216px" height="279px" style="border:1px solid #000000;"></canvas>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>
